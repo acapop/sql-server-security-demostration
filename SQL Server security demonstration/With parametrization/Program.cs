@@ -19,6 +19,11 @@ namespace With_parametrization
 
 
             connetionString = "Server=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks2014";
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connetionString);
+
+            connetionString = builder.ConnectionString;
+
             cnn = new SqlConnection(connetionString);
 
 
