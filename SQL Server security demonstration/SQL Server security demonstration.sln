@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Without parametrization", "Without parametrization\Without parametrization.csproj", "{58CD4E83-E2E9-47B6-B190-36B50B7D32C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic SQL", "Without parametrization\Dynamic SQL.csproj", "{58CD4E83-E2E9-47B6-B190-36B50B7D32C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "With parametrization", "With parametrization\With parametrization.csproj", "{B9FC4F5C-ECA5-43F8-8284-CA2695EB9831}"
 EndProject

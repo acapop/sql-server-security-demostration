@@ -18,23 +18,11 @@ namespace With_SqlConnectionStringBuilder
             Console.WriteLine("Windows connection string:");
             Console.WriteLine(builder.ConnectionString);
 
+            //SQL Server login nije siguran jer podaci idu preko mreze, cime login moze da bude narusen.
             Console.WriteLine("SQL Server connection string:");
             builder.ConnectionString = GetConnectionStringSQLServerLogin();
 
-            Console.WriteLine(builder.ConnectionString);
 
-            Console.WriteLine(builder.Password);
-            builder.Password = "newPassword";
-            builder.AsynchronousProcessing = true;
-            Console.WriteLine(builder.Password);
-            
-            builder["Server"] = ".";
-            builder["Connect Timeout"] = 1000;
-            builder["Trusted_Connection"] = true;
-            Console.WriteLine(builder.ConnectionString);
-
-            Console.WriteLine("Press Enter to finish.");
-            Console.ReadLine();
         }
 
         private static string GetConnectionStringWindows()
